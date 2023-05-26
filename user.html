@@ -106,7 +106,7 @@
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
                             aria-expanded="false">
                             <div class="nav-profile-img">
-                                <img src="assets/images/faces/face28.png" alt="image">
+                                <img src="assets/images/vector-users-icon.webp" alt="">
                             </div>
                             <div class="nav-profile-text">
                                 <p class="mb-1 text-black" id="profile"></p>
@@ -116,7 +116,7 @@
                             aria-labelledby="profileDropdown" data-x-placement="bottom-end">
                             <div class="p-3 text-center bg-primary">
                                 <img class="img-avatar img-avatar48 img-avatar-thumb"
-                                    src="assets/images/faces/face28.png" alt="">
+                                    src="assets/images/vector-users-icon.webp" alt="">
                             </div>
                             <div class="p-2">
                                 <h5 class="dropdown-header text-uppercase pl-2 text-dark">User Options</h5>
@@ -445,6 +445,7 @@
     <script src="assets/js/off-canvas.js"></script>
     <script src="assets/js/hoverable-collapse.js"></script>
     <script src="assets/js/misc.js"></script>
+    <script src="watchman.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
@@ -452,6 +453,7 @@
     <script>
 
         let UserLogin=JSON.parse(localStorage.getItem('UserLogin'))
+        let profile=document.getElementById('profile').innerHTML=UserLogin.name;
         
 
         const viewdata = () => {
